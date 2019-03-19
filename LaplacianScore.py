@@ -113,5 +113,5 @@ class LaplacianScore:
             else:
                 rankings[f_num] = numerator / self.denominator_value
                 
-        return [(feature, rankings[feature]) for feature in sorted(rankings, key=rankings.get, reverse=True)]
+        return [(feature, rankings[feature]) for feature in sorted(rankings, key=rankings.get, reverse=False)]
         
